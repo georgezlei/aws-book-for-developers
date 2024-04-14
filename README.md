@@ -46,14 +46,18 @@ So buckle up, grab your cosmic compass, and let's embark on an interstellar adve
 
 ## Table of Contents
 
-### 1. Understanding Core AWS Services
+### [1. Understanding Core AWS Services](1.%20Understanding%20Core%20AWS%20Services.md)
 
 Beginners often struggle with the sheer number of services AWS offers. Focusing on the core services is crucial:
 
 - **EC2 (Elastic Compute Cloud)**: Basics, instance types, and use cases.
 - **S3 (Simple Storage Service)**: Buckets, objects, and policies.
-- **RDS (Relational Database Service)** and **DynamoDB**: Database services for different needs.
+- **DynamoDB**: NoSQL database service.
 - **Lambda**: Serverless computing, triggers, and use cases.
+- **CloudFront**: Content delivery network (CDN) for faster content delivery.
+- **API Gateway**: Building and managing APIs.
+- **AppSync**: Managed GraphQL service for real-time applications.
+- **SNS (Simple Notification Service)** and **SQS (Simple Queue Service)**: Messaging services for decoupling applications.
 
 ### 2. AWS Security and Identity
 
