@@ -1,0 +1,67 @@
+### EC2
+
+What is an EC2 Instance?
+EC2 instances are the basic building blocks of AWS and represent a virtual server in the cloud.
+
+How do I manage security with EC2?
+Security Groups and Key Pairs are crucial. Security Groups act as a virtual firewall that controls the traffic for one or more instances, while Key Pairs are used to log into your instances securely.
+VPC
+Always assign minimal necessary permissions with IAM roles and policies. Use Security Groups judiciously to ensure that only authorized traffic can access your instances.
+
+How does pricing work with EC2?
+Understanding the pricing options (On-Demand, Reserved Instances, Spot Instances) is essential to manage costs effectively.
+
+Explore Elastic Load Balancing and Auto Scaling:
+
+Understand how to use Elastic Load Balancing to distribute incoming traffic across multiple instances and Auto Scaling to automatically adjust the number of instances as load changes.
+
+Backup and Disaster Recovery:
+
+Learn about snapshotting your volumes for backups and consider setting up multi-region deployment to enhance availability and disaster recovery.
+
+Monitor and Optimize Costs:
+
+Utilize AWS CloudWatch to monitor the performance of your instances and AWS Trusted Advisor to check for cost-saving opportunities and security recommendations.
+
+When developing and deploying applications on AWS EC2, following best practices can significantly enhance both the efficiency and security of your deployments. Here are some key best practices specifically tailored for EC2-based app development and deployment:
+
+### 1. Design for Scalability and Reliability
+
+- **Use Elastic Load Balancing (ELB):** Distribute incoming traffic across multiple EC2 instances to achieve fault tolerance in your application.
+- **Implement Auto Scaling:** Automatically increase or decrease the number of instances based on demand to maintain performance and minimize costs.
+- **Multi-AZ Deployment:** Deploy your application across multiple Availability Zones to ensure high availability and disaster recovery.
+
+### 2. Optimize for Performance
+
+- **Right-size Your Instances:** Regularly review your instance performance and cost, and adjust the instance types and sizes based on your current needs.
+- **Leverage Enhanced Networking:** Use instances that support enhanced networking for high performance networking capabilities, which is especially important for applications requiring high throughput and low latency.
+- **Use Amazon EBS-Optimized Instances:** These instances provide dedicated capacity for Amazon EBS volumes and ensure that neither the instance’s CPU nor network becomes the bottleneck in communication and process execution.
+
+### 3. Secure Your Environment
+
+- **Security Groups and NACLs:** Define firewall rules with Security Groups for your instances and Network Access Control Lists (NACLs) for your subnets to control inbound and outbound traffic.
+- **Use IAM Roles:** Assign IAM roles to your EC2 instances to securely make API requests without needing to manage credentials.
+- **Regularly Update and Patch:** Keep your operating system and applications up to date with the latest security patches.
+
+### 4. Cost Optimization
+
+- **Use Spot Instances:** For workloads that are flexible in when they can run, using Spot Instances can reduce your EC2 costs significantly.
+- **Reserved Instances for Long-term Workloads:** If you have steady-state or predictable usage, purchasing Reserved Instances can save you up to 75% over equivalent on-demand capacity.
+- **Monitor with AWS CloudWatch and Cost Explorer:** Monitor application performance and manage costs by setting alarms and tracking usage and expenditures.
+
+### 5. Automation and Infrastructure as Code (IaC)
+
+- **Use AWS CloudFormation or Terraform:** Manage your infrastructure through code to automate setup and ensure your environments are reproducible, which is essential for reducing errors during deployments.
+- **CI/CD Pipelines:** Implement continuous integration and continuous deployment using AWS services like AWS CodeBuild, AWS CodeDeploy, and AWS CodePipeline to automate the building, testing, and deployment of your applications.
+
+### 6. Backup and Disaster Recovery
+
+- **Automate Backups:** Use Amazon Data Lifecycle Manager to automate the creation, retention, and deletion of snapshots taken to back up your Amazon EBS volumes.
+- **Implement Multi-Region Deployment:** Consider deploying critical components of your application in multiple regions to ensure that the application can handle the loss of one region during a major outage.
+
+### 7. Monitoring and Logging
+
+- **Utilize AWS CloudWatch:** Monitor logs, set alarms, and automatically react to changes in your AWS resources.
+- **Enable Detailed Monitoring:** This provides more granular data about the state of your instances and can help in diagnosing issues.
+
+By implementing these best practices, you can ensure that your EC2-based applications are scalable, reliable, secure, and cost-efficient. Continuous learning and adapting to new AWS features and services can further enhance your ability to effectively utilize EC2 for application development and deployment.

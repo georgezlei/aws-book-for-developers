@@ -46,7 +46,14 @@ So buckle up, grab your cosmic compass, and let's embark on an interstellar adve
 
 ## Table of Contents
 
-### [1. Understanding Core AWS Services](1.%20Understanding%20Core%20AWS%20Services.md)
+### 1. AWS Security and Identity
+
+Security is paramount in cloud computing:
+
+- **IAM (Identity and Access Management)**: Users, groups, roles, and policies.
+- **VPC (Virtual Private Cloud)**: Networking, subnets, gateways, and security.
+
+### [2. Understanding Core AWS Services](Understanding%20Core%20AWS%20Services.md)
 
 Beginners often struggle with the sheer number of services AWS offers. Focusing on the core services is crucial:
 
@@ -58,13 +65,6 @@ Beginners often struggle with the sheer number of services AWS offers. Focusing 
 - **API Gateway**: Building and managing APIs.
 - **AppSync**: Managed GraphQL service for real-time applications.
 - **SNS (Simple Notification Service)** and **SQS (Simple Queue Service)**: Messaging services for decoupling applications.
-
-### 2. AWS Security and Identity
-
-Security is paramount in cloud computing:
-
-- **IAM (Identity and Access Management)**: Users, groups, roles, and policies.
-- **VPC (Virtual Private Cloud)**: Networking, subnets, gateways, and security.
 
 ### 3. DevOps on AWS
 
